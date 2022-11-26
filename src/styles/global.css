@@ -1,0 +1,91 @@
+@tailwind base;
+@layer base {
+	:root {
+		color-scheme: light;
+		--theme-bg: 0 0% 98%;
+		--theme-link: 172 18.1% 41.2%;
+		--theme-text: 202 10.5% 14.9%;
+		--theme-accent: 351 65.9% 48.2%;
+		--theme-accent-2: 0 0% 6.7%;
+		--theme-quote: 351 65.9% 48.2%;
+		--theme-menu-bg: hsl(0 0% 98% / 0.85);
+	}
+
+	:root.dark {
+		color-scheme: dark;
+		--theme-bg: 210 6.5% 12.2%;
+		--theme-link: 330 49.4% 66.7%;
+		--theme-text: 220 2.9% 79.4%;
+		--theme-accent: 159 62.8% 45.3%;
+		--theme-accent-2: 0 0% 93.3%;
+		--theme-quote: 102 100% 85.7%;
+		--theme-menu-bg: hsl(210 6.5% 12.2% / 0.85);
+	}
+
+	html {
+			@apply h-full border-t-2 border-textColor scroll-smooth;
+			font-family: 'Bitter';
+		}
+
+		html body {
+			@apply h-full max-w-3xl mx-auto px-8 pt-16 font-normal antialiased text-sm flex flex-col text-textColor bg-bgColor;
+			font-family: 'Bitter';
+		}
+	}
+@tailwind components;
+@tailwind utilities;
+
+/* bitter-100 - latin */
+@font-face {
+  font-family: 'Bitter';
+  font-style: normal;
+  font-weight: 100;
+  src: local(''),
+	   url('/src/assets/fonts/bitter-v28-latin-100.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+	   url('/src/assets/fonts/bitter-v28-latin-100.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* bitter-regular - latin */
+@font-face {
+  font-family: 'Bitter';
+  font-style: normal;
+  font-weight: 400;
+  src: local(''),
+	   url('/src/assets/fonts/bitter-v28-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+	   url('/src/assets/fonts/bitter-v28-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* bitter-700 - latin */
+@font-face {
+  font-family: 'Bitter';
+  font-style: normal;
+  font-weight: 700;
+  src: local(''),
+	   url('/src/assets/fonts/bitter-v28-latin-700.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+	   url('/src/assets/fonts/bitter-v28-latin-700.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* bitter-100italic - latin */
+@font-face {
+  font-family: 'Bitter';
+  font-style: italic;
+  font-weight: 100;
+  src: local(''),
+	   url('/src/assets/fonts/bitter-v28-latin-100italic.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+	   url('/src/assets/fonts/bitter-v28-latin-100italic.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* bitter-italic - latin */
+@font-face {
+  font-family: 'Bitter';
+  font-style: italic;
+  font-weight: 400;
+  src: local(''),
+	   url('/src/assets/fonts/bitter-v28-latin-italic.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+	   url('/src/assets/fonts/bitter-v28-latin-italic.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* bitter-700italic - latin */
+@font-face {
+  font-family: 'Bitter';
+  font-style: italic;
+  font-weight: 700;
+  src: local(''),
+	   url('/src/assets/fonts/bitter-v28-latin-700italic.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+	   url('/src/assets/fonts/bitter-v28-latin-700italic.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}

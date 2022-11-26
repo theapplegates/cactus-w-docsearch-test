@@ -1,0 +1,18 @@
+---
+layout: "@/layouts/BlogPost"
+title: A Gulfstream G700
+publishDate: 08 September 2022
+description: A $70 million dollar business jet.
+tags: ["gulfstream", "G700", "lottery winner"]
+---
+import { Picture } from '@astrojs/image/components';
+
+<Picture
+src={import("src/assets/images/Gulfstream-G700.jpg")}
+widths={[400, 768]}
+sizes="(max-width: 767px) 400px, 768px"
+alt="Post 2 Image"
+aspectRatio="16:9"
+/>
+
+<Picture src={import("src/assets/images/Gulfstream-G700.jpg")} widths={[100, 200, 400, 800, 1600]} sizes="(max-width: 1600px) 100w, 1600px" alt="descriptive text" />
